@@ -1,0 +1,28 @@
+[2022-04-12 17:55:00] [INFO] red: Loading packages...
+[2022-04-12 17:57:32] [ERROR] red.downloader: error: bad signature 0x00000000
+fatal: index file corrupt
+[2022-04-12 17:57:32] [ERROR] red.downloader: Ignoring repo flamecogs due to error.
+Traceback (most recent call last):
+  File "C:\Users\HRIDAAN\redenv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 1218, in _load_repos
+    ret[folder.stem] = await Repo.from_folder(folder, branch)
+  File "C:\Users\HRIDAAN\redenv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 1007, in from_folder
+    await repo.checkout(repo.branch, force_checkout=True)
+  File "C:\Users\HRIDAAN\redenv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 591, in _checkout
+    raise errors.UnknownRevision(
+redbot.cogs.downloader.errors.UnknownRevision: Git command failed: ['git', '-C', 'C:\\Users\\HRIDAAN\\AppData\\Roaming\\ducky\\cogs\\RepoManager\\repos\\flamecogs', 'checkout', 'master']
+Error message: Could not checkout to master. This revision may not exist
+[2022-04-12 17:57:34] [ERROR] red.downloader: error: bad signature 0x00000000
+fatal: index file corrupt
+[2022-04-12 17:57:34] [ERROR] red.downloader: Ignoring repo flapjack-cogs due to error.
+Traceback (most recent call last):
+  File "C:\Users\HRIDAAN\redenv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 1218, in _load_repos
+    ret[folder.stem] = await Repo.from_folder(folder, branch)
+  File "C:\Users\HRIDAAN\redenv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 1007, in from_folder
+    await repo.checkout(repo.branch, force_checkout=True)
+  File "C:\Users\HRIDAAN\redenv\lib\site-packages\redbot\cogs\downloader\repo_manager.py", line 591, in _checkout
+    raise errors.UnknownRevision(
+redbot.cogs.downloader.errors.UnknownRevision: Git command failed: ['git', '-C', 'C:\\Users\\HRIDAAN\\AppData\\Roaming\\ducky\\cogs\\RepoManager\\repos\\flapjack-cogs', 'checkout', 'red-v3-rewrites']
+Error message: Could not checkout to red-v3-rewrites. This revision may not exist
+[2022-04-12 17:57:38] [INFO] red.fox_v3.fifo.scheduler: Scheduler started
+[2022-04-12 17:57:38] [DEBUG] red.fox_v3.fifo.scheduler: Looking for jobs to run
+[2022-04-12 17:57:38] [DEBUG] red.fox_v3.fifo.scheduler: No jobs; waiting until a job is added
